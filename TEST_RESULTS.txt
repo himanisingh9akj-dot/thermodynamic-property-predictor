@@ -1,0 +1,46 @@
+PURE COMPONENT THERMODYNAMIC PROPERTY PREDICTOR
+AUTOMATED TEST RESULTS
+===============================================
+
+Test date: 10 November 2026
+Test framework: pytest 9.2.0
+Python version: 3.14.2
+Platform: macOS
+
+FINAL RESULT
+------------
+14 tests passed
+0 tests failed
+Execution time: 0.63 seconds
+
+TEST COVERAGE
+-------------
+1. Methane thermodynamic state using Peng-Robinson EOS
+2. Methane thermodynamic state using SRK EOS
+3. Fugacity relation using Peng-Robinson EOS
+4. Fugacity relation using SRK EOS
+5. Ideal gas limiting behaviour using Peng-Robinson EOS
+6. Ideal gas limiting behaviour using SRK EOS
+7. Enthalpy and entropy calculations using Peng-Robinson EOS
+8. Enthalpy and entropy calculations using SRK EOS
+9. Residual property calculations using Peng-Robinson EOS
+10. Residual property calculations using SRK EOS
+11. Invalid temperature handling
+12. Invalid pressure handling
+13. Cubic root sorting
+14. Enthalpy and entropy reference-state calculation
+
+ADDITIONAL CHECKS
+-----------------
+Python compilation check:
+Command: python3 -m compileall -q app.py tests/test_core.py
+Result: PASSED
+
+Application startup and interface:
+Result: PASSED (manual verification)
+
+IMPORTANT NOTE
+--------------
+These automated tests check mathematical relationships, expected
+limiting behaviour, internal consistency, and input validation.
+They do not constitute independent experimental validation.
